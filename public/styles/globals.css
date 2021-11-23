@@ -1,5 +1,18 @@
 html {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(228, 56%, 26%);
+  background-image: url("/assets/images/bg-mobile.png");
+  background-repeat: no-repeat;
+  color: white;
+}
+
+@media (min-width: 375px) {
+  body {
+    background-image: url("/assets/images/bg-desktop.png");
+  }
 }

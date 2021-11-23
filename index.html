@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -16,8 +15,42 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/data-usage.css" />
   </head>
   <body>
-    You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB
+    <nav class="navbar">
+      <div class="navbar__logo">
+        <img src="/assets/images/logo.svg" alt="fylo logo" />
+      </div>
+
+      <div class="navbar__links">
+        <img
+          class="navbar__link"
+          src="/assets/images/icon-document.svg"
+          alt="document"
+        />
+        <img
+          class="navbar__link"
+          src="/assets/images/icon-folder.svg"
+          alt="folder"
+        />
+        <img
+          class="navbar__link"
+          src="/assets/images/icon-upload.svg"
+          alt="upload"
+        />
+      </div>
+    </nav>
+
+    <section class="dataUsage">
+      <p class="dataUsage__summary">You’ve used 815 GB of your storage</p>
+      <div class="dataUsage__progressBar"></div>
+      <div class="dataUsage__capacity">
+        <p class="capacity__lowerLimit">0 GB</p>
+        <p class="capacity__upperLimit">1000 GB</p>
+      </div>
+      <aside class="dataUsage__remaining">185 GB Left</aside>
+    </section>
   </body>
 </html>
