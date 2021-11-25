@@ -15,42 +15,52 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/data-storage.css" />
     <link rel="stylesheet" href="/styles/navbar.css" />
-    <link rel="stylesheet" href="/styles/data-usage.css" />
+    <link rel="stylesheet" href="/styles/usage.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Red+Hat+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="navbar__logo">
-        <img src="/assets/images/logo.svg" alt="fylo logo" />
-      </div>
+    <main class="dataStorage">
+      <nav class="dataStorage__navbar">
+        <img
+          class="navbar__logo"
+          src="/assets/images/logo.svg"
+          alt="fylo logo"
+        />
 
-      <div class="navbar__links">
-        <img
-          class="navbar__link"
-          src="/assets/images/icon-document.svg"
-          alt="document"
-        />
-        <img
-          class="navbar__link"
-          src="/assets/images/icon-folder.svg"
-          alt="folder"
-        />
-        <img
-          class="navbar__link"
-          src="/assets/images/icon-upload.svg"
-          alt="upload"
-        />
-      </div>
-    </nav>
+        <div class="navbar__links">
+          <img
+            class="navbar__link"
+            src="/assets/images/icon-document.svg"
+            alt="document"
+          />
+          <img
+            class="navbar__link"
+            src="/assets/images/icon-folder.svg"
+            alt="folder"
+          />
+          <img
+            class="navbar__link"
+            src="/assets/images/icon-upload.svg"
+            alt="upload"
+          />
+        </div>
+      </nav>
 
-    <section class="dataUsage">
-      <p class="dataUsage__summary">You’ve used 815 GB of your storage</p>
-      <div class="dataUsage__progressBar"></div>
-      <div class="dataUsage__capacity">
-        <p class="capacity__lowerLimit">0 GB</p>
-        <p class="capacity__upperLimit">1000 GB</p>
-      </div>
-      <aside class="dataUsage__remaining">185 GB Left</aside>
-    </section>
+      <section class="dataStorage__usage">
+        <p class="usage__summary">You’ve used 815 GB of your storage</p>
+        <div class="usage__progressBar"></div>
+        <div class="usage__capacity">
+          <p class="capacity__lowerLimit">0 GB</p>
+          <p class="capacity__upperLimit">1000 GB</p>
+        </div>
+        <aside class="usage__remaining">185 GB Left</aside>
+      </section>
+    </main>
   </body>
 </html>
