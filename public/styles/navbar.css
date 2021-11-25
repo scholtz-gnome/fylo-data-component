@@ -1,3 +1,16 @@
 .dataStorage__navbar {
-  border: 1px dotted pink;
+  background-color: var(--dark-blue);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 8px;
+  padding: 25px;
+  margin-bottom: 16px;
+  width: 100%;
+}
+
+@media (min-width: 375px) {
+  .dataStorage__navbar {
+    margin-bottom: 0;
+  }
 }

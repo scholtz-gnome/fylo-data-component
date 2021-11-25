@@ -1,3 +1,6 @@
 .dataStorage__usage {
-  border: 1px dotted pink;
+  background-color: var(--dark-blue);
+  border-radius: 8px;
+  padding: 25px;
+  width: 100%;
 }

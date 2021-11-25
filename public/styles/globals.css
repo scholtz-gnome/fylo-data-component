@@ -2,6 +2,8 @@ html {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Raleway, sans-serif;
+  font-weight: 400;
 }
 
 body {
@@ -10,11 +12,12 @@ body {
   background-repeat: no-repeat;
   box-sizing: border-box;
   color: white;
-  font-family: Raleway, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
   margin: 0;
   padding: 0;
+}
+
+p {
+  margin: 0;
 }
 
 :root {
@@ -22,6 +25,7 @@ body {
   --grayish-blu: hsl(229, 7%, 55%);
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
+  font-size: 14px;
 }
 
 @media (min-width: 375px) {
