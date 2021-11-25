@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 html {
   box-sizing: border-box;
   margin: 0;
@@ -8,16 +14,9 @@ html {
 
 body {
   background-color: var(--very-dark-blue);
-  background-image: url("/assets/images/bg-mobile.png");
+  background-image: var(--mobile-background);
   background-repeat: no-repeat;
-  box-sizing: border-box;
   color: white;
-  margin: 0;
-  padding: 0;
-}
-
-p {
-  margin: 0;
 }
 
 :root {
@@ -26,10 +25,12 @@ p {
   --dark-blue: hsl(228, 56%, 26%);
   --very-dark-blue: hsl(229, 57%, 11%);
   font-size: 14px;
+  --mobile-background: url("/assets/images/bg-mobile.png");
+  --desktop-background: url("/assets/images/bg-desktop.png");
 }
 
 @media (min-width: 375px) {
   body {
-    background-image: url("/assets/images/bg-desktop.png");
+    background-image: var(--desktop-background);
   }
 }
