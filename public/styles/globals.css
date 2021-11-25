@@ -32,5 +32,7 @@ body {
 @media (min-width: 375px) {
   body {
     background-image: var(--desktop-background);
+    background-position: bottom;
+    background-size: auto;
   }
 }

@@ -2,11 +2,26 @@
   background-color: var(--dark-blue);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
-  border-top-right-radius: 50px;
+  border-top-right-radius: 90px;
   border-top-left-radius: 8px;
-  padding: 25px;
+  padding: 35px;
   margin-bottom: 16px;
   width: 100%;
+}
+
+.navbar__links {
+  display: flex;
+  padding-top: 25px;
+}
+
+.navbar__link {
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 12px;
 }
 
 @media (min-width: 375px) {
