@@ -1,50 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Fylo data storage component</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="/styles/globals.css" />
-    <link rel="stylesheet" href="/styles/style.css">
-  </head>
-  <body>
-    <header>
-      <img src="./assets/images/logo.svg" alt="">
-      <div class="storage-type-icon-container">
-          <div class="storage-type-icon">
-              <img src="./assets/images/icon-document.svg" alt="">
-          </div>
-          <div class="storage-type-icon">
-              <img src="./assets/images/icon-folder.svg" alt="">
-          </div>
-          <div class="storage-type-icon">
-              <img src="./assets/images/icon-upload.svg" alt="">
-          </div>
+  <title>Fylo data storage component</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/styles/globals.css" />
+  <link rel="stylesheet" href="/styles/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<main class="data-storage-component">
+
+    <section class="data-storage-component__nav-component">
+      <img class="data-storage-component__nav-component--logo" src="./assets/images/logo.svg" alt="">
+      <div class="data-storage-component__nav-component__navigation-section">
+        <div class="data-storage-component__nav-component__navigation-section--icon">
+          <img src="./assets/images/icon-document.svg" alt="">
+        </div>
+        <div class="data-storage-component__nav-component__navigation-section--icon">
+          <img src="./assets/images/icon-folder.svg" alt="">
+        </div>
+        <div class="data-storage-component__nav-component__navigation-section--icon">
+          <img src="./assets/images/icon-upload.svg" alt="">
+        </div>
+
       </div>
 
-  </header>
-  
-  <main>
-      <p>You've used <span><strong
-      >815 GB</strong></span> of your storage</p>
-  </main>
+    </section>
 
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
-  </body>
+    <section class="data-storage-component__data-display">
+      <p class="data-storage-component__data-display__used-storage">You've used <strong>815 GB</strong> of your storage</p>
+
+      <div class="data-storage-component__data-display__usage-bar">
+        <progress max="1000" value="815"></progress>
+      </div>
+
+      <span class="data-storage-component__data-display__max-min">
+        <p>0GB</p>
+        <p>1000GB</p>
+      </span>
+
+    </section>
+    <aside class="data-storage-component__callout-box">
+      <p><span class="data-storage-component__callout-box--data-value"><strong>185</strong></span> GB LEFT</p>
+    </aside>
+
+</main>
+</body>
+
 </html>

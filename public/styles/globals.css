@@ -1,41 +1,32 @@
-html {
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   background: no-repeat url("../assets/images/bg-mobile.png");
   background-size: cover;
-  font-family: 'Mochiy Pop One', sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  color: hsl(243, 100%, 93%);
-  text-align: center;
 }
 
-header {
-  background-color: hsl(228, 56%, 26%);
-  display: inline-grid;
-  margin: 6rem 0 1rem 0;
-  padding: 3rem;
-  border-radius: 0.5rem 5rem 0.2rem 0.2rem;
-  width:50%;
+/* For Chrome or Safari */
+progress{
+  width: 100%;
 }
 
-header img{
-  margin-top: -1rem;
-  padding: 0;
-  text-align: center;
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 2rem;
 }
 
-
-main {
-  background-color: hsl(228, 56%, 26%);
-  width: 50%;
-  margin: 0;
-}
-
-main p{
-  justify-content: center;
+progress[value]::-webkit-progress-value {
+  background: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
+  border-radius: 2rem;
 }
