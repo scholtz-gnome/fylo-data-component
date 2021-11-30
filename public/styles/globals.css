@@ -30,3 +30,11 @@ progress[value]::-webkit-progress-value {
   background: linear-gradient(to right, hsl(6, 100%, 80%),hsl(335, 100%, 65%));
   border-radius: 2rem;
 }
+
+@media (min-width: 376px){
+  body{
+    background: no-repeat url("../assets/images/bg-desktop.png");
+    background-color: hsl(229, 57%, 11%);
+    background-position: bottom;
+  }
+}
