@@ -65,4 +65,10 @@
     align-items: flex-start;
     max-width: 600px;
   }
+
+  .usage__remaining {
+    top: -25px;
+    right: 50px;
+    border-bottom-right-radius: 0;
+  }
 }
