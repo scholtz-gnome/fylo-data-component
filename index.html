@@ -4,12 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <title>Fylo data storage component</title>
 
@@ -26,53 +21,38 @@
   </head>
   <body>
     <main class="dataStorage">
-      <nav class="dataStorage__navbar">
-        <img
-          class="navbar__logo"
-          src="/assets/images/logo.svg"
-          alt="fylo logo"
-        />
+      <nav class="dataStorageNavbar">
+        <img src="/assets/images/logo.svg" alt="fylo logo" />
 
         <div class="navbar__links">
           <div class="navbar__link">
-            <img
-              class="navbar__link--icon"
-              src="/assets/images/icon-document.svg"
-              alt="document"
-            />
+            <img src="/assets/images/icon-document.svg" alt="document" />
           </div>
 
           <div class="navbar__link">
-            <img
-              class="navbar__link--icon"
-              src="/assets/images/icon-folder.svg"
-              alt="folder"
-            />
+            <img src="/assets/images/icon-folder.svg" alt="folder" />
           </div>
 
           <div class="navbar__link">
-            <img
-              class="navbar__link--icon"
-              src="/assets/images/icon-upload.svg"
-              alt="upload"
-            />
+            <img src="/assets/images/icon-upload.svg" alt="upload" />
           </div>
         </div>
       </nav>
 
       <section class="dataStorage__usage">
-        <p class="usage__summary">
-          You’ve used <strong>815 GB</strong> of your storage
-        </p>
+        <p class="usage__summary">You’ve used <strong>815 GB</strong> of your storage</p>
+
         <div class="usage__progressBar">
           <div class="usage__progressBar--slider">
             <div class="usage__progressBar--ball"></div>
           </div>
         </div>
+
         <div class="usage__capacity">
           <p class="usage__capacity--lowerLimit"><strong>0 GB</strong></p>
           <p class="usage__capacity--upperLimit"><strong>1000 GB</strong></p>
         </div>
+
         <aside class="usage__remaining"><strong>185</strong> GB LEFT</aside>
       </section>
     </main>

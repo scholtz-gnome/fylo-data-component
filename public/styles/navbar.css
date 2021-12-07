@@ -1,4 +1,4 @@
-.dataStorage__navbar {
+.dataStorageNavbar {
   background-color: var(--dark-blue);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
@@ -25,7 +25,7 @@
 }
 
 @media (min-width: 375px) {
-  .dataStorage__navbar {
+  .dataStorageNavbar {
     margin-bottom: 0;
     max-width: 375px;
   }
