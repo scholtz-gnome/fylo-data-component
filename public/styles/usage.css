@@ -9,42 +9,44 @@
 }
 
 .usage__summary {
+  padding-bottom: 18px;
   text-align: center;
 }
 
 .usage__progressBar {
-  height: 20px;
-  width: 100%;
+  align-items: center;
   background-color: var(--very-dark-blue);
-  padding: 2px;
   border-radius: 11px;
   display: flex;
-  align-items: center;
+  height: 20px;
+  padding: 2px;
+  width: 100%;
 }
 
 .usage__progressBar--slider {
-  height: 100%;
-  border-radius: 11px;
-  width: 80%;
-  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
-  display: flex;
-  justify-content: end;
   align-items: center;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 11px;
+  display: flex;
+  height: 100%;
+  justify-content: end;
   padding: 0 2px;
+  width: 80%;
 }
 
 .usage__progressBar--ball {
   background-color: #fff;
+  border-radius: 11px;
   height: 82%;
   width: 12.5px;
-  border-radius: 11px;
 }
 
 .usage__capacity {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  width: 100%;
 }
 
 .usage__remaining {
