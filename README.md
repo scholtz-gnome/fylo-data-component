@@ -27,8 +27,10 @@ Once the server is running, open your browser and navigate to [http://localhost:
 Below are screenshots of our solution, first in desktop and then in mobile.
 
 Desktop
+![desktop-screenshot](public/assets/images/desktop-screenshot.png)
 
 Mobile
+![desktop-screenshot](public/assets/images/mobile-screenshot.png)
 
 ## Our process
 

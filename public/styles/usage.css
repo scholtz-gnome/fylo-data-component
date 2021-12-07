@@ -38,8 +38,8 @@
 .usage__progressBar--ball {
   background-color: #fff;
   border-radius: 11px;
-  height: 82%;
-  width: 12.5px;
+  height: 81%;
+  width: 12px;
 }
 
 .usage__capacity {
@@ -60,6 +60,10 @@
   top: 110px;
 }
 
+.usage__remainingPoint {
+  display: none;
+}
+
 @media (min-width: 375px) {
   .dataStorage__usage {
     align-items: flex-start;
@@ -70,5 +74,17 @@
     top: -25px;
     right: 50px;
     border-bottom-right-radius: 0;
+  }
+
+  .usage__remainingPoint {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+
+    border-right: 20px solid transparent;
+
+    border-bottom: 20px solid white;
+    transform: rotate(180deg);
   }
 }
